@@ -1,0 +1,22 @@
+# FastAPI 및 서버 관련
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Pydantic 설정 관리
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# HTTP 클라이언트 (외부 API 통신용)
+httpx==0.25.2
+
+# Ollama 클라이언트
+ollama==0.1.7
+
+# 파일 처리
+python-multipart==0.0.6
+
+# 환경 변수 관리
+python-dotenv==1.0.0
+
+# 로깅
+structlog==23.2.0
