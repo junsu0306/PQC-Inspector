@@ -1,22 +1,19 @@
-# FastAPI 및 서버 관련
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
+#--- 웹 프레임워크 ---
+fastapi
+uvicorn[standard]
 
-# Pydantic 설정 관리
-pydantic==2.5.0
-pydantic-settings==2.1.0
+#--- 데이터베이스 (ORM & Driver) ---
+sqlalchemy
+psycopg2-binary
+alembic # DB 마이그레이션 도구 (선택 사항)
 
-# HTTP 클라이언트 (외부 API 통신용)
-httpx==0.25.2
+#--- 데이터 검증 및 설정 관리 ---
+pydantic
+python-dotenv
 
-# Ollama 클라이언트
-ollama==0.1.7
-
-# 파일 처리
-python-multipart==0.0.6
-
-# 환경 변수 관리
-python-dotenv==1.0.0
-
-# 로깅
-structlog==23.2.0
+#--- AI/ML (Hugging Face) ---
+transformers
+torch
+accelerate
+bitsandbytes # 4-bit/8-bit 양자화를 위해 필요 (선택 사항)
+sentence-transformers # RAG 임베딩을 위해 필요 (선택 사항)
